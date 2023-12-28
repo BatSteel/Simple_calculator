@@ -8,6 +8,14 @@ def data_insertion(value):
         clear_screen()
     word=display.get()+value
     display.set(word)
+
+def get_data():
+    try:
+        word=eval(display.get())
+        display.set(word)
+    except:
+        word="ERROR"
+        display.set(word)
 window=Tk()
 window.geometry("730x355")
 display=StringVar()
@@ -38,5 +46,5 @@ div=Button(window,text="/",bg="black",fg="red",command=lambda:data_insertion("/"
 mul=Button(window,text="x",bg="black",fg="red",command=lambda:data_insertion("x"),width=6,bd=5).place(x=180,y=162)
 
 # created = button
-equal=Button(window,text="=",bg="blue",fg="red",width=33,bd=5).place(x=0,y=196)
+equal=Button(window,text="=",bg="blue",fg="red",width=33,bd=5,command=lambda:get_data()).place(x=0,y=196)
 window.mainloop()
