@@ -43,7 +43,7 @@ minus=Button(window,text="-",bg="black",fg="red",command=lambda:data_insertion("
 dot=Button(window,text=".",bg="black",fg="red",command=lambda:data_insertion("."),width=6,bd=5).place(x=0,y=162)
 b0=Button(window,text="0",bg="black",fg="red",command=lambda:data_insertion("0"),width=6,bd=5).place(x=60,y=162)
 div=Button(window,text="/",bg="black",fg="red",command=lambda:data_insertion("/"),width=6,bd=5).place(x=120,y=162)
-mul=Button(window,text="x",bg="black",fg="red",command=lambda:data_insertion("x"),width=6,bd=5).place(x=180,y=162)
+mul=Button(window,text="x",bg="black",fg="red",command=lambda:data_insertion("*"),width=6,bd=5).place(x=180,y=162)
 
 # created = button
 equal=Button(window,text="=",bg="blue",fg="red",width=33,bd=5,command=lambda:get_data()).place(x=0,y=196)
