@@ -25,4 +25,18 @@ b5=Button(window,text="5",bg="black",fg="red",command=lambda:data_insertion("5")
 b6=Button(window,text="6",bg="black",fg="red",command=lambda:data_insertion("6"),width=6,bd=5).place(x=120,y=94)
 plus=Button(window,text="+",bg="black",fg="red",command=lambda:data_insertion("+"),width=6,bd=5).place(x=180,y=94)
 
+# created  1,2,3 and - button
+b1=Button(window,text="1",bg="black",fg="red",command=lambda:data_insertion("1"),width=6,bd=5).place(x=0,y=128)
+b2=Button(window,text="2",bg="black",fg="red",command=lambda:data_insertion("2"),width=6,bd=5).place(x=60,y=128)
+b3=Button(window,text="3",bg="black",fg="red",command=lambda:data_insertion("3"),width=6,bd=5).place(x=120,y=128)
+minus=Button(window,text="-",bg="black",fg="red",command=lambda:data_insertion("-"),width=6,bd=5).place(x=180,y=128)
+
+# created .,0,/,x buttons
+dot=Button(window,text=".",bg="black",fg="red",command=lambda:data_insertion("."),width=6,bd=5).place(x=0,y=162)
+b0=Button(window,text="0",bg="black",fg="red",command=lambda:data_insertion("0"),width=6,bd=5).place(x=60,y=162)
+div=Button(window,text="/",bg="black",fg="red",command=lambda:data_insertion("/"),width=6,bd=5).place(x=120,y=162)
+mul=Button(window,text="x",bg="black",fg="red",command=lambda:data_insertion("x"),width=6,bd=5).place(x=180,y=162)
+
+# created = button
+equal=Button(window,text="=",bg="blue",fg="red",width=33,bd=5).place(x=0,y=196)
 window.mainloop()
