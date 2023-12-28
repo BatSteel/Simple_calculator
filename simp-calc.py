@@ -11,7 +11,13 @@ def data_insertion(value):
 window=Tk()
 window.geometry("730x355")
 display=StringVar()
-display_text=Entry(window, width=46, bd=20, textvariable=display,justify="right",bg="Gray")
-display_text.grid(row=0,column=0,columnspan=4)
+display_text=Entry(window, width=33, bd=20, textvariable=display,justify="right",bg="Gray")
+display_text.grid(row=1,column=1,columnspan=4)
+# created 7,8,9 and clear button
+b7=Button(window,text="7",bg="black",fg="red",command=lambda:data_insertion("7"),width=6,bd=5).place(x=0,y=60)
+b8=Button(window,text="8",bg="black",fg="red",command=lambda:data_insertion("8"),width=6,bd=5).place(x=60,y=60)
+b9=Button(window,text="9",bg="black",fg="red",command=lambda:data_insertion("9"),width=6,bd=5).place(x=120,y=60)
+clear=Button(window,text="c",bg="red",fg="black",command=lambda:clear_screen(),width=6,bd=5).place(x=180,y=60)
+
 
 window.mainloop()
