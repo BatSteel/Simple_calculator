@@ -1,5 +1,13 @@
 from tkinter import *
-
+# created a function to clear the text area
+def clear_screen():
+    display.set("")
+# function to insert values into the text area
+def data_insertion(value):
+    if display.get()=="ERROR":
+        clear_screen()
+    word=display.get()+value
+    display.set(word)
 window=Tk()
 window.geometry("730x355")
 display=StringVar()
