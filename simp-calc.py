@@ -19,5 +19,10 @@ b8=Button(window,text="8",bg="black",fg="red",command=lambda:data_insertion("8")
 b9=Button(window,text="9",bg="black",fg="red",command=lambda:data_insertion("9"),width=6,bd=5).place(x=120,y=60)
 clear=Button(window,text="c",bg="red",fg="black",command=lambda:clear_screen(),width=6,bd=5).place(x=180,y=60)
 
+# created 4,5,6 and + button
+b4=Button(window,text="4",bg="black",fg="red",command=lambda:data_insertion("4"),width=6,bd=5).place(x=0,y=94)
+b5=Button(window,text="5",bg="black",fg="red",command=lambda:data_insertion("5"),width=6,bd=5).place(x=60,y=94)
+b6=Button(window,text="6",bg="black",fg="red",command=lambda:data_insertion("6"),width=6,bd=5).place(x=120,y=94)
+plus=Button(window,text="+",bg="black",fg="red",command=lambda:data_insertion("+"),width=6,bd=5).place(x=180,y=94)
 
 window.mainloop()
